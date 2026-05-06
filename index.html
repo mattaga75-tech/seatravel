@@ -1,1 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeaTravel - Book Your Sea Journey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>🌊 SeaTravel</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#booking">Book Ticket</a></li>
+                <li><a href="#routes">Routes</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Explore the Seas</h2>
+            <p>Book your perfect sea journey with SeaTravel</p>
+            <a href="#booking" class="btn btn-primary">Book Now</a>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <div class="container">
+            <h2>Book Your Ticket</h2>
+            <form class="booking-form" id="bookingForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="from">Departure Port:</label>
+                        <select id="from" required>
+                            <option value="">Select Port</option>
+                            <option value="Miami">Miami, USA</option>
+                            <option value="Singapore">Singapore</option>
+                            <option value="Dubai">Dubai, UAE</option>
+                            <option value="Barcelona">Barcelona, Spain</option>
+                            <option value="Sydney">Sydney, Australia</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="to">Destination Port:</label>
+                        <select id="to" required>
+                            <option value="">Select Port</option>
+                            <option value="Caribbean">Caribbean Islands</option>
+                            <option value="Asia">Southeast Asia</option>
+                            <option value="Mediterranean">Mediterranean</option>
+                            <option value="Pacific">Pacific Islands</option>
+                            <option value="Europe">Northern Europe</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="departure">Departure Date:</label>
+                        <input type="date" id="departure" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="passengers">Number of Passengers:</label>
+                        <input type="number" id="passengers" min="1" max="10" value="1" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="cabin">Cabin Type:</label>
+                        <select id="cabin" required>
+                            <option value="">Select Cabin</option>
+                            <option value="standard">Standard Cabin - $500</option>
+                            <option value="deluxe">Deluxe Cabin - $800</option>
+                            <option value="suite">Suite - $1200</option>
+                            <option value="penthouse">Penthouse Suite - $2000</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" required>
+                </div>
+
+                <button type="submit" class="btn btn-success">Book Ticket</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Routes Section -->
+    <section id="routes" class="routes">
+        <div class="container">
+            <h2>Popular Routes</h2>
+            <div class="routes-grid">
+                <div class="route-card">
+                    <h3>🏝️ Caribbean Cruise</h3>
+                    <p><strong>From:</strong> Miami</p>
+                    <p><strong>Duration:</strong> 7 Days</p>
+                    <p><strong>Price:</strong> Starting $599</p>
+                    <p>Experience the tropical paradise with stops at pristine islands.</p>
+                </div>
+                <div class="route-card">
+                    <h3>🌏 Asia Explorer</h3>
+                    <p><strong>From:</strong> Singapore</p>
+                    <p><strong>Duration:</strong> 10 Days</p>
+                    <p><strong>Price:</strong> Starting $799</p>
+                    <p>Discover vibrant cultures and exotic destinations across Southeast Asia.</p>
+                </div>
+                <div class="route-card">
+                    <h3>🏛️ Mediterranean Discovery</h3>
+                    <p><strong>From:</strong> Barcelona</p>
+                    <p><strong>Duration:</strong> 12 Days</p>
+                    <p><strong>Price:</strong> Starting $899</p>
+                    <p>Immerse yourself in history and culture along Europe's coast.</p>
+                </div>
+                <div class="route-card">
+                    <h3>🌅 Pacific Adventure</h3>
+                    <p><strong>From:</strong> Sydney</p>
+                    <p><strong>Duration:</strong> 14 Days</p>
+                    <p><strong>Price:</strong> Starting $999</p>
+                    <p>Sail through the vast Pacific visiting remote islands and atolls.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2>Why Choose SeaTravel?</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-icon">⚓</div>
+                    <h3>Expert Ships</h3>
+                    <p>Modern, luxurious vessels with world-class amenities</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">👥</div>
+                    <h3>Expert Crew</h3>
+                    <p>Professional and friendly staff ensuring your comfort</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">💳</div>
+                    <h3>Secure Payment</h3>
+                    <p>Safe and encrypted booking system</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🎁</div>
+                    <h3>Best Prices</h3>
+                    <p>Competitive rates with exclusive offers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p><strong>📧 Email:</strong> info@seatravel.com</p>
+                    <p><strong>📱 Phone:</strong> +1 (555) 123-4567</p>
+                    <p><strong>🏢 Address:</strong> 123 Harbor Street, Miami, FL 33101</p>
+                    <p><strong>🕐 Hours:</strong> Mon-Fri 9AM-6PM EST</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 SeaTravel. All rights reserved.</p>
+            <p>Your gateway to unforgettable maritime adventures</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
